@@ -1,4 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import NavBar from './Components/NavBar';
+import ItemListContainer from './Components/ItemListContainer';
+
+const App = () => {
+  return (
+    <div>
+      <NavBar/>
+      <ItemListContainer message="¡Gracias por visitarnos!" />
+    </div>
+  );
+};
+
+export default App;
+
+
+/* import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -23,3 +39,4 @@ function App() {
 }
 
 export default App;
+ */
