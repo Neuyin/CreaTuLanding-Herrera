@@ -4,7 +4,7 @@ const CartWidget = () => {
   return (
     <div>
       <span role="img" aria-label="Carrito de compras">🛒</span>
-      {/* Puedes agregar aquí la lógica para mostrar la cantidad de productos en el carrito */}
+      {/*mostrar la cantidad de productos en el carrito */}
     </div>
   );
 };

@@ -5,7 +5,7 @@ const ItemListContainer = (props) => {
     <div>
       <h2>Bienvenido a nuestra tienda</h2>
       <p>{props.message}</p>
-      {/* Aquí puedes mostrar el catálogo de productos en el futuro */}
+      {/* catalogo de productos*/}
     </div>
   );
 };

@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav>
       <div>
-        <img src="ruta_del_logo.png" alt="Logo de la tienda" />
+        <img src="/mitienda/public/logolamp.png" alt="Logo de la tienda" />
       </div>
       <div>
         <ul>
@@ -15,7 +15,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div>
-        <CartWidget />
+        <CartWidget/>
       </div>
     </nav>
   );
