@@ -55,3 +55,24 @@
 .card-without-stock img{
   width: 200px;
 }
+
+/* Aqui empieza el estilo de contacto */
+.form-contacto {
+  text-align: center;
+  align-items: center;
+  padding: 10% 20%;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.form-text {
+  color:rgb(109, 102, 88);
+}
+
+.container-footer {
+  text-align: center;
+  align-items: center;
+  padding: 3% 10%;
+}
