@@ -30,11 +30,10 @@
 }
 
 .card {
-  border: 1px solid #ddd;
   border-radius: 10px; /* Bordes redondeados */
   padding: 15px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra moderna */
+  box-shadow: 0 4px 8px #6d6658; /* Sombra moderna */
   transition: transform 0.3s ease-in-out;
 }
 
