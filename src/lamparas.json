@@ -5,16 +5,16 @@
       "name": "Lámparas de diseño",
       "description": "Decora tu hogar con artículos particulares y personalizados.",
       "price": 5000,
-      "stock": 15,
-      "category": "cuerdas"
+      "stock": 8,
+      "category": "diseño"
     },
     {
       "id": 2,
       "name": "Lámparas de mesa",
       "description": "Los clásicos no pasan de moda, elige lo que mejor se adapte a tus mesas.",
       "price": 8000,
-      "stock": 0,
-      "category": "cuerdas"
+      "stock": 5,
+      "category": "mesa"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "description": "La luz es necesaria en todos lados, elige entre nuestras opciones fáciles de transportar.",
       "price": 15000,
       "stock": 5,
-      "category": "percusión"
+      "category": "portátil"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "description": "La calidad de nuestra madera realzará la elegancia de tu hogar.",
       "price": 7000,
       "stock": 8,
-      "category": "cuerdas"
+      "category": "madera"
     },
     {
       "id": 5,
@@ -38,15 +38,15 @@
       "description": "Descubre un mundo de ideas nuevas.",
       "price": 10000,
       "stock": 12,
-      "category": "viento"
+      "category": "resina"
     },
     {
       "id": 6,
       "name": "Lámparas de pared",
       "description": "Decora las paredes de tu hogar con nuestros diseños exclusivos.",
       "price": 9000,
-      "stock": 0,
-      "category": "cuerdas"
+      "stock": 5,
+      "category": "pared"
     },
     {
       "id": 7,
@@ -54,15 +54,15 @@
       "description": "El techo de tu casa es parte importante de la decoración, mirá las opciones que ofrecemos.",
       "price": 6000,
       "stock": 20,
-      "category": "viento"
+      "category": "colgante"
     },
     {
       "id": 8,
       "name": "Lámparas temáticas",
       "description": "Cine, series, Disney, personajes y lugares famosos.",
       "price": 25000,
-      "stock": 0,
-      "category": "cuerdas"
+      "stock": 3,
+      "category": "temática"
     },
       {
         "id": 9,
@@ -70,16 +70,31 @@
         "description": "Dale luz a los marcos de tu casa con nuestra variedad de cuadros.",
         "price": 7500,
         "stock": 9,
-        "category": "cuerdas"
+        "category": "cuadro"
       },
       {
         "id": 10,
         "name": "Lámparas personalizadas",
         "description": "Contáctanos para ideas personalizadas.",
         "price": 12000,
-        "stock": 6,
-        "category": "viento"
+        "stock": 0, 
+        "category": "personalizada"
+      },
+      {
+        "id": 11,
+        "name": "Lámparas de cocina",
+        "description": "Contáctanos para ideas personalizadas.",
+        "price": 9000,
+        "stock": 1, 
+        "category": "cocina"
+      },
+      {
+        "id": 12,
+        "name": "Lámparas de baño",
+        "description": "Contáctanos para ideas personalizadas.",
+        "price": 7000,
+        "stock": 3, 
+        "category": "baño"
       }
     ]
   }
-  

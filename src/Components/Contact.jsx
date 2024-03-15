@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>Información de contacto
-      <form class="form-contacto" action="https://formspree.io/f/xoqoklrz" method="POST">
+      {/* <form class="form-contacto" action="https://formspree.io/f/xoqoklrz" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputName1" class="form-label">Nombre y apellido</label>
                     <input type="text" class="form-control" id="exampleInputName1" placeholder="Escribe aquí tu nombre y apellido" name="nombre"/>
@@ -22,7 +22,7 @@ const Contact = () => {
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje" placeholder="Escribe aquí tus comentarios o motivo de consulta"></textarea>
                 </div> 
                 <button type="submit" class="btn btn-contacto">Enviar</button>
-            </form>   
+            </form>  */}  
     </div>
   )
 }

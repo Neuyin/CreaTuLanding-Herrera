@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import productos from '../lamparas.json'
 import ItemList from './ItemList'
 import Loader from './Loader'
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({greeting}) => {
-    const [lamparas, setLamparas] = useState([])
+    const [lamparas, setLamparas] = useState([]);
+    const { category } = useParams();
 
     const fetchData = () => new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -15,16 +17,12 @@ const ItemListContainer = ({greeting}) => {
     useEffect(() => {
         fetchData()
         .then(res => setLamparas(res))
-    }, [])
-
-    // Deberian hacer para la 2da pre-entrega
-        // Lógica para obtener mediante useParams() si existe tal category que muestre la lista filtrada (metodo .filter())
-    //
+    }, [category])
    
   return (
     <div>
         <h1>Bienvenidos a Ranpu Lámparas</h1>
-        <h4>La tienda virtual donde podrás elegir entre nuestra variedad de productos. Explora nuestras categorías: </h4>
+        <h4>La tienda virtual donde podrás elegir nuestra variedad de productos. Explora nuestras categorías: </h4>
         {lamparas.length == 0 ? <Loader /> : <ItemList lamparas={lamparas}/>}
     </div>
   )
