@@ -16,8 +16,17 @@ const ItemListContainer = ({greeting}) => {
 
     useEffect(() => {
         fetchData()
-        .then(res => setLamparas(res))
-    }, [category])
+            .then(res => {
+                if (category) {
+                    // Si hay una categoría en la URL, filtramos las lámparas según esa categoría
+                    const filteredLamparas = res.filter(lampara => lampara.category === category);
+                    setLamparas(filteredLamparas);
+                } else {
+                    // Si no hay categoría en la URL, mostramos todas las lámparas
+                    setLamparas(res);
+                }
+            });
+    }, [category]);
    
   return (
     <div>

@@ -2,6 +2,7 @@
   "lamparas": [
     {
       "id": 1,
+      "img": "diseño.jpg",
       "name": "Lámparas de diseño",
       "description": "Decora tu hogar con artículos particulares y personalizados.",
       "price": 5000,

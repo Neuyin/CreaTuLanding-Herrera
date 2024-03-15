@@ -7,8 +7,9 @@ import { useAppContext } from '../context/Context'
 const ItemDetailContainer = () => {
     const [itemDetail, setItemDetail] = useState({})
     const {agregarAlCarrito} = useAppContext();
-    const img = 'https://images.app.goo.gl/gf1pcmKP9sMcuUGN7'
+    const img = 'https://batavia.es/blog/wp-content/uploads/2017/04/Lamparas_de_diseno_italiano_blog_batavia_04.jpg'
     const {id} =  useParams()
+    // const {category} =  useParams() estudiar 
     
     useEffect(() => {
         const findItem = productos.lamparas.find((item) => item.id == id)
@@ -17,7 +18,8 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-        <img src={img} alt="" width={400}/>
+        {/* Usamos la propiedad 'img' de cada objeto de lámpara para mostrar la imagen */}
+        <img src={itemDetail.img} alt="" width={400}/>
         <h1>{itemDetail.name}</h1>
         <h3>${itemDetail.price}</h3>
         <p>{itemDetail.description}</p>

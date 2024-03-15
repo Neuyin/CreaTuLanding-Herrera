@@ -8,11 +8,6 @@ import Formulario from './Components/Formulario'
 import { ContextProvider } from './context/Context'
 
 function App() {
-  // let routes = {
-  //   home: '/',
-  //   category: '/product/category',
-  //   detail: 'detail/id'
-  // }
   return (
     <div className='App'>
       <ContextProvider>
