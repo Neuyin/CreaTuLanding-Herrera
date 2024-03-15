@@ -21,6 +21,7 @@ const ItemListContainer = ({greeting}) => {
    
   return (
     <div>
+        <h1>{greeting}</h1>
         <h1>Bienvenidos a Ranpu Lámparas</h1>
         <h4>La tienda virtual donde podrás elegir nuestra variedad de productos. Explora nuestras categorías: </h4>
         {lamparas.length == 0 ? <Loader /> : <ItemList lamparas={lamparas}/>}

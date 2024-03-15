@@ -7,8 +7,8 @@ const Navbar = () => {
     const { carrito } = useAppContext();
 
     return <div className="navbar">
-        <Link to='/'><h4>Home</h4></Link>
-        <Link to='/contact'><h4>Contact</h4></Link>
+        <Link to='/'><h4>Categorias</h4></Link>
+        <Link to='/contact'><h4>Contacto</h4></Link>
         <div style={{ display: "flex" }}>
             <CartWidget />
             {
