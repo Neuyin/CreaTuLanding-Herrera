@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react' /*Hook de estado*/
 
 const Contador = ({stock}) => {
     const [contador, setContador] = useState(0)

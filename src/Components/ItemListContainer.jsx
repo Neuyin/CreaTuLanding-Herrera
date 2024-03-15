@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react'
-import productos from '../instrumentos.json'
+import productos from '../lamparas.json'
 import ItemList from './ItemList'
 import Loader from './Loader'
 
 const ItemListContainer = ({greeting}) => {
-    const [instrumentos, setInstrumentos] = useState([])
+    const [lamparas, setLamparas] = useState([])
 
     const fetchData = () => new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(productos.instrumentos)
+            resolve(productos.lamparas)
         }, 2000)
     })
 
     useEffect(() => {
         fetchData()
-        .then(res => setInstrumentos(res))
+        .then(res => setLamparas(res))
     }, [])
 
     // Deberian hacer para la 2da pre-entrega
@@ -24,7 +24,8 @@ const ItemListContainer = ({greeting}) => {
   return (
     <div>
         <h1>Bienvenidos a Ranpu Lámparas</h1>
-        {instrumentos.length == 0 ? <Loader /> : <ItemList instrumentos={instrumentos}/>}
+        <h4>La tienda virtual donde podrás elegir entre nuestra variedad de productos. Explora nuestras categorías: </h4>
+        {lamparas.length == 0 ? <Loader /> : <ItemList lamparas={lamparas}/>}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import productos from '../instrumentos.json'
+import productos from '../lamparas.json'
 import Contador from './Contador'
 import { useAppContext } from '../context/Context'
 
@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     const {id} =  useParams()
     
     useEffect(() => {
-        const findItem = productos.instrumentos.find((item) => item.id == id)
+        const findItem = productos.lamparas.find((item) => item.id == id)
         setItemDetail(findItem)
     }, [])
 
