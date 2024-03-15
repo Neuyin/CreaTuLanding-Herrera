@@ -1,30 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Contact = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [mensaje, setMensaje] = useState('')
+
   return (
-    <div>Información de contacto
-      {/* <form class="form-contacto" action="https://formspree.io/f/xoqoklrz" method="POST">
-                <div class="mb-3">
-                    <label for="exampleInputName1" class="form-label">Nombre y apellido</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Escribe aquí tu nombre y apellido" name="nombre"/>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" name="email"/>
-                    <div id="emailHelp" class="form-text">Nunca enviaré tu correo a nadie más.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Teléfono</label>
-                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Escribe tu número de contacto" name="telefono"/>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje" placeholder="Escribe aquí tus comentarios o motivo de consulta"></textarea>
-                </div> 
-                <button type="submit" class="btn btn-contacto">Enviar</button>
-            </form>  */}  
+    <div className="contact-container"> 
+    <h4>Para dudas o consultas podés dejarnos un mensaje y te responderemos a la brevedad</h4>
+      <form className="contact-form">
+      <div className="form-group">
+        <h3>Nombre: {name}</h3> <input type="text" onChange={(event) => setName(event.target.value)}/>
+        <h3>Email: {email}</h3> <input type="email" onChange={(event) => setEmail(event.target.value)}/>
+        <h3>Telefono: {phone}</h3> <input type="number" onChange={(event) => setPhone(event.target.value)}/>
+        <h3>Mensaje: </h3> <textarea value={mensaje} onChange={(event) => setMensaje(event.target.value)} />
+        <button type="submit" className="button-contact">Enviar</button>
+        </div>
+      </form>
     </div>
-  )
+    )
 }
 
 export default Contact
